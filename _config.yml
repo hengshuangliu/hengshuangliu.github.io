@@ -103,7 +103,7 @@ gitment:
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: hengshuangliu
-    repo: blog-comments
+    repo: hengshuangliu.github.io
     clientID: 1bbd7bc82ad79cd34108
     clientSecret: 696433e4fdba2ba494a25c10ebed386d0ee488c1
 # 在使用其它评论组件时可点击显示 Disqus

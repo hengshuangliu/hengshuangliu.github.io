@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://hengshuangliu.github.io/
+url: https://hengshuangliu.github.io
 date_format: "ordinal"
 title: 怖放弃
 subtitle: "有恒何必三更眠五更起"

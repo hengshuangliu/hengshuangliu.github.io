@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 'win10下安装boost和dlib'
-subtitle: '安装软件包'
-date: 2018-06-11
+title: win10下安装boost和dlib
+description: 安装软件包
 categories: Windows
-tags: boost&dlib 
+keywords: boost, dlib 
 ---
+
+安装软件包
 
 # win10下安装boost和dlib
 ### 1.安装boost

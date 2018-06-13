@@ -1,11 +1,12 @@
 ---
 layout: post
-title: '安装caffe和faster-rcnn'
-subtitle: '解决安装caffe和faster-rcnn遇到的问题'
-date: 2018-06-11
+title: 安装caffe和faster-rcnn
+description: 解决安装caffe和faster-rcnn遇到的问题
 categories: Linux
-tags: linux搭建faster-rcnn 
+keywords: linux, faster-rcnn 
 ---
+
+解决安装caffe和faster-rcnn遇到的问题
 
 # 安装caffe和faster-rcnn中注意事项
 1. anaconda2/lib中protobuf、opencv和hdf5动态链接库与系统中usr/lib中冲突，因此，不能将anaconda2/lib加入LD_LIBRARY_PATH中，或者加入了也需要将这些库备份删除；

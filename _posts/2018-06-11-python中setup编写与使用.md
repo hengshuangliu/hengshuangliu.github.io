@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 'Python中setup编写与使用'
-subtitle: 'setup'
-date: 2018-06-11
+title: Python中setup编写与使用
+description: setup
 categories: Python
-tags: setup 
+keywords: setup, python
 ---
+
+介绍Python中setup编写与使用
 
 # setup.py
 ## 1.Python模块的安装

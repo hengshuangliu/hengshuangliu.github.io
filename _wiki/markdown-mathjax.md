@@ -16,7 +16,7 @@ mathjax: true
 
 ### 插入公式
 
-When $(a \ne 0)$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
+When $$(a \ne 0)$$, there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 ### 上下标
@@ -72,8 +72,8 @@ $$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示�
 
 | 显示    | Markdown |  显示    | Markdown |
 | -----: | ------  | ------: | -------  |
-| $\alpha$  | \$\alpha$ | $\beta$ | \$\beta$ |
-| $\gamma$ | \$\gamma$ | $\delta$  | \$\delta$  |
+| $$\alpha$$ | \$\alpha$ | $$\beta$$ | \$\beta$ |
+| $$\gamma$$ | \$\gamma$ | $$\delta$$ |\$\delta$  |
 | $\epsilon$ | \$\epsilon$ | $\zeta$ |\$\zeta$ |
 |$\eta$ | \$\eta$ | $\theta$  |  \$\theta$ |
 | $\iota$ | \$\iota$ | $\kappa$  | \$\kappa$ |

@@ -11,7 +11,8 @@ mathjax: true
 ---
 
 **目录**
-@toc
+* TOC
+{:toc}
 
 ### 插入公式
 
@@ -68,8 +69,9 @@ $$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示�
 $$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)} $$
 
 ### 希腊字母
-| 显示 | Markdown |  显示  | Markdown |
-| -------- | -------- | --------: | -------: |
+
+| 显示    | Markdown |  显示    | Markdown |
+| -----: | ------  | ------: | -------  |
 | $\alpha$  | \$\alpha$ | $\beta$ | \$\beta$ |
 | $\gamma$ | \$\gamma$ | $\delta$  | \$\delta$  |
 | $\epsilon$ | \$\epsilon$ | $\zeta$ |\$\zeta$ |
@@ -113,10 +115,10 @@ $$\frac{\partial^{2}y}{\partial x^{2}}$$
 ### 常见运算符
 
 | 运算符    | Markdown |  运算符   | Markdown |
-| -------- | -------- | --------: | -------: |
+| ------: | -------- | --------: | ------- |
 | $\pm$    | \$\pm$   | $\times$  | \$\times$|
 | $\div$   | \$\div$  | $\mid$    | \$\mid$  |
-| $$\leq$  | \$\leq$  | $\geq$    | \$\geq$  |
+| $\leq$  | \$\leq$  | $\geq$    | \$\geq$  |
 | $\neq$   | \$\neq$  | $\approx$ |\$\approx$|
 | $\sum$   | \$\sum$  | $\prod$   |\$\prod$ |
 | $\in$  | \$\in$  | $\emptyset$ |\$\emptyset$|

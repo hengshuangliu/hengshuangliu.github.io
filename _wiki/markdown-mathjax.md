@@ -74,28 +74,28 @@ $$ \lim_{n \to +\infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示�
 | -----: | ------  | ------: | -------  |
 | $$\alpha$$ | \$\alpha$ | $$\beta$$ | \$\beta$ |
 | $$\gamma$$ | \$\gamma$ | $$\delta$$ |\$\delta$  |
-| $\epsilon$ | \$\epsilon$ | $\zeta$ |\$\zeta$ |
-|$\eta$ | \$\eta$ | $\theta$  |  \$\theta$ |
-| $\iota$ | \$\iota$ | $\kappa$  | \$\kappa$ |
-|$\lambda$| \$\lambda$ |$\nu$  |  \$\nu$  |
-|$\mu$ | \$\mu$ | $\xi$ |\$\xi$ |
-|$o$| \$o$   | $\pi$  |  \$\pi$|
-|$\rho$| \$\rho$  | $\sigma$  |  \$\sigma$   |
-|$\tau$| \$\tau$  | $\upsilon$ | \$\upsilon$ |
-|$\phi$| \$\phi$ | $\chi$  |  \$\chi$|
-|$\psi$|  \$\psi$ | $\omega$ | \$\omega$  |
-|$A$| \$A$ |  $B$  |  \$B$ |
-|$\Gamma$| \$\Gamma$ | $\Delta$ |\$\Delta$ |
-|$E$ | \$E$ |$Z$  |  \$Z$ |
-|$H$|  \$H$| $\Theta$  | \$\Theta$ |
-|$I$| \$I$  | $K$  |  \$K$ |
-|$\Lambda$| \$\Lambda$ |$N$  | \$N$ |
-|$M$| \$M$ | $\Xi$  |  \$\Xi$ |
-|$O$|  \$O$ |  $\Pi$ |  \$\Pi$ |
-|$P$|  \$P$  |  $\Sigma$  | \$\Sigma$ |
-|$T$|  \$T$  | $\Upsilon$  |  \$\Upsilon$ |
-|$\Phi$|  \$\Phi$ | $X$  | \$X$ |
-|$\Psi$|  \$\Psi$ | $\Omega$| \$\Omega$ |
+| $$\epsilon$$| \$\epsilon$ |$$\zeta$$ |\$\zeta$ |
+|$$\eta$$| \$\eta$ |$$\theta$$  |  \$\theta$ |
+| $$\iota$$ | \$\iota$ |$$\kappa$$  | \$\kappa$ |
+|$$\lambda$$| \$\lambda$ |$$\nu$$  |  \$\nu$  |
+|$$\mu$$ | \$\mu$ | $$\xi$$ |\$\xi$ |
+|$$o$$| \$o$   | $$\pi$$  |  \$\pi$|
+|$$\rho$$| \$\rho$  | $$\sigma$$  |  \$\sigma$   |
+|$$\tau$$| \$\tau$  | $$\upsilon$$ | \$\upsilon$ |
+|$$\phi$$| \$\phi$ | $$\chi$$  |  \$\chi$|
+|$$\psi$$|  \$\psi$ | $$\omega$$ | \$\omega$  |
+|$$A$$| \$A$ |  $$B$$  |  \$B$ |
+|$$\Gamma$$| \$\Gamma$ | $$\Delta$$ |\$\Delta$ |
+|$$E$$| \$E$ |$$Z$$  |  \$Z$ |
+|$$H$$|  \$H$| $$\Theta$$  | \$\Theta$ |
+|$$I$$| \$I$  | $$K$$  |  \$K$ |
+|$$\Lambda$$| \$\Lambda$ |$$N$$  | \$N$ |
+|$$M$$| \$M$ | $$\Xi$$  |  \$\Xi$ |
+|$$O$$|  \$O$ |  $$\Pi$$ |  \$\Pi$ |
+|$$P$$|  \$P$  | $$\Sigma$$  | \$\Sigma$ |
+|$$T$$|  \$T$  | $$\Upsilon$$  |  \$\Upsilon$ |
+|$$\Phi$$|  \$\Phi$ | $$X$$  | \$X$ |
+|$$\Psi$$|  \$\Psi$ | $$\Omega$$| \$\Omega$ |
 
 
 ### 大括号和行标
@@ -116,21 +116,21 @@ $$\frac{\partial^{2}y}{\partial x^{2}}$$
 
 | 运算符    | Markdown |  运算符   | Markdown |
 | ------: | -------- | --------: | ------- |
-| $\pm$    | \$\pm$   | $\times$  | \$\times$|
-| $\div$   | \$\div$  | $\mid$    | \$\mid$  |
-| $\leq$  | \$\leq$  | $\geq$    | \$\geq$  |
-| $\neq$   | \$\neq$  | $\approx$ |\$\approx$|
-| $\sum$   | \$\sum$  | $\prod$   |\$\prod$ |
-| $\in$  | \$\in$  | $\emptyset$ |\$\emptyset$|
-| $\notin$  | \$\notin$ | $\subset$ | \$\subset$ |
-| $\supset$ |\$\supset$ | $\subseteq$|\$\subseteq$|
-| $\supseteq$|\$\supseteq$ | $\log$ |\$\log$ |
-|$\lg$     | \$\lg$   |  $\ln$    | \$\ln$   |
-| $\hat{y}$ | \$\hat{y}$ |$\check{y}$|\$\check{y}$|
-| $\cos$ |  \$\cos$ | $\tan$ |  \$\tan$ |
-| $\int$  | \$\int$ | $\iint$  |  \$\iint$  |
-|$\iiint$  | \$\iiint$ | $\oint$ | \$\oint$ |
-| $\lim$ |  \$\lim$  |  $\infty$  | \$\infty$  |
-| $\nabla$  |  \$\nabla$  | $\not=$ |  \$\not=$ |
+| $$\pm$$    | \$\pm$   |$$\times$$  | \$\times$|
+| $$\div$$   | \$\div$  |$$\mid$$   | \$\mid$  |
+| $$\leq$$  | \$\leq$  |$$\geq$$    | \$\geq$  |
+| $$\neq$$   | \$\neq$  |$$\approx$$ |\$\approx$|
+| $$\sum$$   | \$\sum$  |$$\prod$$   |\$\prod$ |
+| $$\in$$  | \$\in$  |$$\emptyset$$ |\$\emptyset$|
+| $$\notin$$ | \$\notin$ |$$\subset$$ | \$\subset$ |
+|$$\supset$$|\$\supset$ |$$\subseteq$$|\$\subseteq$|
+|$$\supseteq$$|\$\supseteq$|$$\log$$ |\$\log$ |
+|$$\lg$$     | \$\lg$   |$$\ln$$   | \$\ln$   |
+|$$\hat{y}$$|\$\hat{y}$ |$$\check{y}$$|\$\check{y}$|
+|$$\cos$$ |  \$\cos$ | $$\tan$$|  \$\tan$ |
+|$$\int$$  | \$\int$ | $$\iint$$|  \$\iint$  |
+|$$\iiint$$  | \$\iiint$ | $$\oint$$| \$\oint$ |
+|$$\lim$$|  \$\lim$  |  $$\infty$$ | \$\infty$  |
+|$$\nabla$$ |  \$\nabla$  | $$\not=$$ |  \$\not=$ |
 
 [More](http://www.cnblogs.com/q735613050/p/7253073.html)

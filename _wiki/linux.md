@@ -60,4 +60,12 @@ lsof -u mazhuang
 lsof -c Vim
 ```
 
+#### pushd, popd, dirs命令
+```sh
+dirs [-clpv]  [+n]  [-n] #显示目录栈
+pushd  [目录]  #添加目录至目录栈，并切换至目录
+popd #删除目录栈，并切换至删除后栈顶目录
+```
+
+
 注意程序名区分大小写。

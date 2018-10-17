@@ -27,21 +27,44 @@ keywords: CMake, CMakeLists
 
 # 基本使用
 
-## 1. 常用指令、预定义变量解释
-* **PROJECT_BINARY_DIR**：工程编译发生的当前目录；
-* **PROJECT_SOURCE_DIR**：工程源文件目录；
-* **ADD_SUBDIRECTORY(source_dir [binary_dir] [EXCLUDE_FROM_ALL])**：添加源文件目录、设置源文件输出目录(包含生成的中间文件)、排除目录；
-* **EXECUTABLE_OUTPUT_PATH**：可执行文件输出目录；
-* **LIBRARY_OUTPUT_PATH**：静态库、动态库输出目录；
-* **ADD_LIBRARY(name [SHARED|STATIC|MODULE][EXCLUDE_FROM_ALL]source1 source2 ... sourceN)**：指定由source源文件生成静态库或动态库libname.a或libname.so（name唯一，不能重名）；
+## 1. 预定义变量解释
+* **CMAKE/PROJECT_BINARY_DIR**：工程编译发生的当前目录；
+* **CMAKE/PROJECT_SOURCE_DIR**：工程的顶级目录；
+* **CMAKE_CURRENT_SOURCE_DIR**:当前处理的cmakelist目录；
+* **CMAKE_CURRENT_BINARY_DIR**: Target编译目录，可通过add-subdirectory来修改目录名；
+* **CMAKE_LIBRARY_OUTPUT_DIRECTORY**：
+* **CMAKE_RUNTIME_OUTPUT_DIRECTORY**：
+* **EXECUTABLE_OUTPUT_PATH**：可执行文件最终输出目录，如果区分版本，则会建立相应的子目录；
+* **LIBRARY_OUTPUT_PATH**：静态库、动态库最终输出目录；
+* **CMAKE_CXX_FLAGS**:设置 C ++编译选项,也可以通过指令 ADD_DEFINITIONS()添加;
+* **CMAKE_C_FLAGS**:设置 C 编译选项,也可以通过指令 ADD_DEFINITIONS()添加
+* **CMAKE_BUILD_TYPE**: 可以取值**Debug, Release, RelWithDebInfo and MinSizeRel**, 仅对单配置产生器有用，如Makefile Generators or Ninja Generator. 不包含IDE Build Tool Generators，如visual studio Generators.
+* **CMAKE_CURRENT_LIST_LINE**：当前所在的行；
+* **CMAKE_CURRENT_LIST_FILE**：包含Cmakelists文件名的完整路径；
+* **CMAKE_CURRENT_LIST_DIR**：当前文件所在路径；
+* **CMAKE_LIBRARY_OUTPUT_DIRECTORY**：target的输出类型：Module库总是被作为LIBRARY target，此变量在源工程顶层中配置，优先级高于**EXECUTABLE_OUTPUT_PATH**(猜测)；
+* **CMAKE_ARCHIVE_OUTPUT_DIRECTORY**：静态库总是被作为ARCHIVE target，windows下，对应的Import library作为ARCHIVE target；
+* **CMAKE_RUNTIME_OUTPUT_DIRECTORY**：可执行文件总是被作为RUMTIME target，在Windows平台，shared library的DLL部分作为RUNTIME target；
+* **CMAKE_<CONFIG>_POSTFIX**：设置输出文件后缀，CONFIG为对应DEBUG或RELEASE版本；
+
+## 2. 常用指令解析
+* **ADD_EXECUTABLE(target source1 source2)**: 指定生成可执行文件；
+* **ADD_LIBRARY(name [SHARED\|STATIC\|MODULE][EXCLUDE_FROM_ALL]source1 source2 ... sourceN)**：指定由source源文件生成静态库或动态库libname.a或libname.so（name唯一，不能重名）；
+* **ADD_SUBDIRECTORY(source_dir [binary_dir] [EXCLUDE_FROM_ALL])**：添加源文件目录、设置源文件输出目录(包含生成的中间文件，默认目录名与source-dir一致，采用相对目录)、排除目录；
+* **ADD_DEPENDENCIES**：
+* **ADD_DEFINITIONS**: 向 C/C++编译器添加-D 定义,如
+**ADD_DEFINITIONS(-DENABLE_DEBUG -DABC) //参数之间用空格分割**, 在代码中通过#ifdef ABD判断使用；
 * **SET_TARGET_PROPERTIES(target1 target2 ...PROPERTIES prop1 value1prop2 value2 ...)**：设置目标属性；
-* **INCLUDE_DIRECTORIES([AFTER|BEFORE] [SYSTEM] dir1 dir2 ...)**:工程中添加头文件搜索目录，目录中有空格则用双引号括起来；
+* **INCLUDE\_DIRECTORIES([AFTER\|BEFORE] [SYSTEM] dir1 dir2 ...)**:工程中添加头文件搜索目录，目录中有空格则用双引号括起来；
 * **LINK_DIRECTORIES(directory1 directory2 ...)**：添加链接库搜索目录；
 * **TARGET_LINK_LIBRARIES(target library1<debug | optimized> library2...)**：为指定目标设置链接库；
-* **message([status|warning|send_error|fatal_error] “some message”)**:打印输出信息；
+* **message([status\|warning\|send_error\|fatal_error] “some message”)**:打印输出信息；
 * **option(address "This is a option for address" ON)**：设置cmake编译选项，以及默认值；
+* **aux_source_directory(dir  variable)**:搜集所有在指定路径下的源文件的文件名，将输出结果列表储存在指定的变量中;
+* **INSTALL(TARGET target1 DISTINATION dst1)**: 拷贝target1至dst1目录；
 
-## 2. 简单的开始
+
+## 3. 简单的开始
 ```cmake
 cmake_minimum_required (VERSION 2.6)
 project (Tutorial)

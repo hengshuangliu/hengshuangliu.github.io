@@ -7,4 +7,4 @@ _site/
 Gemfile.lock
 
 /_wiki/*.resource/
-/_post/*.resource/
+/_posts/*.resource/
